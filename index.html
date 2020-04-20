@@ -57,7 +57,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       let xrRefSpace = null;
       let xrViewerSpace = null;
       let xrHitTestSource = null;
-
+      var polyfill = new WebXRPolyfill();
+      import WebXRPolyfill from 'webxr-polyfill';
+      const polyfill = new WebXRPolyfill();
       // WebGL scene globals.
       let gl = null;
       let renderer = null;
